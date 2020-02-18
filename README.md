@@ -10,8 +10,8 @@ finds all shortest paths between every combination of two islands. Any pair of i
 prints path using the FIFO(first) rule for the islands on the standard output.
 
 File input data:
-• the first line in the file is a number of islands;
-• remaining lines are describing distance between two islands, one per line. Each line consists of two islands and bridge length between them in the format:
+- the first line in the file is a number of islands;
+- remaining lines are describing distance between two islands, one per line. Each line consists of two islands and bridge length between them in the format:
 island1-island2,length_of_bridge .
 – Island names contain only alphabetic characters and cannot be empty.
 – Length contains only digits.
@@ -19,7 +19,8 @@ island1-island2,length_of_bridge .
 
 # Output
 
-Output consist of information blocks about certain shortest path. Every block contains:
+Output consist of information blocks about certain shortest path. 
+Every block contains:
 "========================================" upper boundary that consist of 40 '=' characters;
 Path: -> - shows initial point and final destination;
 Route: -> <all_islands_between> -> - shows the full route between two islands;
@@ -29,12 +30,12 @@ Distance: + = - shows the distance between every island in the route as well as 
 # Error handling
 
 Prints on the standard error stream:
-• "usage: ./pathfinder [filename]" , if there are an invalid number of command-line arguments;
-• "error: file [filename] does not exist" , if the file does not exist;
-• "error: file [filename] is empty" , if the file is empty;
-• "error: line 1 is not valid" , if the first line contains something other than digits;
-• "error: line [line_number] is not valid" , if one of the remaining lines does not match the format above;
-• "error: invalid number of islands" , if the number received on the first line does not coincide with the number of islands.
+- "usage: ./pathfinder [filename]" , if there are an invalid number of command-line arguments;
+- "error: file [filename] does not exist" , if the file does not exist;
+- "error: file [filename] is empty" , if the file is empty;
+- "error: line 1 is not valid" , if the first line contains something other than digits;
+- "error: line [line_number] is not valid" , if one of the remaining lines does not match the format above;
+- "error: invalid number of islands" , if the number received on the first line does not coincide with the number of islands.
 
 # Libmx
 
