@@ -5,9 +5,9 @@ Including libmx library
 OS: MacOS, Linux
 
 A program that finds all the shortest paths between all the islands, using information about the bridges that connect them. So, the program:
-reads data from the file which name is given as command-line argument;
-finds all shortest paths between every combination of two islands. Any pair of islands always has a path between them;
-prints path using the FIFO(first) rule for the islands on the standard output.
+1. reads data from the file which name is given as command-line argument;
+2. finds all shortest paths between every combination of two islands. Any pair of islands always has a path between them;
+3. prints path using the FIFO(first) rule for the islands on the standard output.
 
 File input data:
 - the first line in the file is a number of islands;
@@ -21,11 +21,11 @@ island1-island2,length_of_bridge .
 
 Output consist of information blocks about certain shortest path. 
 Every block contains:
-"========================================" upper boundary that consist of 40 '=' characters;
-Path: -> - shows initial point and final destination;
-Route: -> <all_islands_between> -> - shows the full route between two islands;
-Distance: + = - shows the distance between every island in the route as well as their sum that indicates distance to the final destination;
-"========================================" bottom boundary that consist of 40 '=' characters.
+1. "========================================" upper boundary that consist of 40 '=' characters;
+2. Path: -> - shows initial point and final destination;
+3. Route: -> <all_islands_between> -> - shows the full route between two islands;
+4. Distance: + = - shows the distance between every island in the route as well as their sum that indicates distance to the final destination;
+5. "========================================" bottom boundary that consist of 40 '=' characters.
 
 # Error handling
 
